@@ -1,0 +1,27 @@
+const app = new Vue({
+    el:'#app',
+    data:{
+        email:[],
+
+        
+
+    },
+    methods:{
+
+    },
+    created(){
+        axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((res)=>{
+            for(let i=0; i < 10; i++){
+                this.email = res.data.response
+
+                
+
+            }
+
+
+        }).catch((error)=>{
+            console.log(error);
+        })
+    }
+
+})
