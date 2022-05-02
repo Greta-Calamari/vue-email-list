@@ -7,11 +7,11 @@ const app = new Vue({
 
     },
     methods:{
-        random(){
-            axios.get('https://flynn.boolean.careers/exercises/api/array/integers?min=1&max=10&items=10').then(()=>{
+        // random(){
+        //     axios.get('https://flynn.boolean.careers/exercises/api/array/integers?min=10&max=10&items=10').then(()=>{
                 
-            })
-        }
+        //     })
+        // }
         
 
     },
@@ -22,6 +22,7 @@ const app = new Vue({
                 console.log(res.data.response)
                 
             }
+           
 
                 
 
