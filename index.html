@@ -12,7 +12,7 @@
 <body>
     <div id="app">
         <ul >
-            <li v-for="mail in email">{{email}}</li>
+            <li v-for="(mail,index) in 10" :key="index">{{email}}</li>
         </ul>
     </div>
 
