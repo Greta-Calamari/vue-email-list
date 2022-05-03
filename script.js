@@ -12,12 +12,12 @@ const app = new Vue({
 
     },
     created(){
+        for(let i=0; i < 10; i++){
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((res)=>{
-            for(let i=0; i < 10; i++){
                 
                 this.email.push(res.data.response);
                 console.log(res.data.response)
-            }
+            
             
                 
             
@@ -31,5 +31,6 @@ const app = new Vue({
             console.log(error);
         })
     }
+   }
 
 })
